@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void reverseString(char* s, int sSize) {
+    int left = 0;
+    int right = sSize - 1;
+
+    while (left < right) {
+        char temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+        left++;
+        right--;
+    }
+}
+*******************************************
+INPUT:
+s=["h","e","l","l","o"]
+s=["H","a","n","n","a","h"]
+
+OUTPUT:
+["o","l","l","e","h"]
+["h","a","n","n","a","H"]
+****************************************
