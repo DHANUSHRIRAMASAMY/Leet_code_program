@@ -1,0 +1,15 @@
+void Reverse(int* arr, int st, int end) {
+    while(st<end){
+        int temp=arr[st];
+        arr[st]=arr[end];
+        arr[end]=temp;
+        st++;
+        end--;
+    }
+}
+    void rotate(int* nums,int numsSize,int k) {
+        k=k%numsSize;
+        Reverse(nums,0,numsSize-1);
+          Reverse(nums,0,k-1);
+          Reverse(nums,k,numsSize-1);
+}
