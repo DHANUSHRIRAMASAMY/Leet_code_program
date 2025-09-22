@@ -1,0 +1,14 @@
+class Solution {
+    public int mySqrt(int x) {
+        int i = 0;
+        while (i * i <= x) {
+            i++;
+        }
+        return i - 1;
+    }
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        System.out.println(sol.mySqrt(4));   
+        System.out.println(sol.mySqrt(8));    
+    }
+}
